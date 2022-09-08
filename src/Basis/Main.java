@@ -16,18 +16,43 @@ public class Main {
         arr[6] = new Phone(407, "Ус", "Ліна","Андріївна", 5401, 58, 0);
 
         task_a(arr);
+        task_b(arr);
+    }
+
+    static void printLine(){
+        for(int i=0;i<50;i++){
+            System.out.print("-");
+        }
+        System.out.print("\n");
     }
 
     static void task_a(Phone[] arr){
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the limit of city calls:");
+        printLine();
+        printLine();
+        System.out.println("Task A\nEnter the limit of city calls:");
         int lim = in.nextInt();
 
+        printLine();
         for(int i=0; i< arr.length; i++){
             if(arr[i].getCityCalls() > lim){
                 System.out.println(arr[i]);
             }
         }
+        printLine();
+    }
+
+    static void task_b(Phone[] arr){
+        Scanner in = new Scanner(System.in);
+        printLine();
+        System.out.println("Task B\nInformation about subscribers who used intercity call:");
+        printLine();
+        for(int i=0; i<arr.length; i++){
+            if(arr[i].getIntercityCalls() != 0){
+                System.out.println(arr[i]);
+            }
+        }
+        printLine();
     }
 
 

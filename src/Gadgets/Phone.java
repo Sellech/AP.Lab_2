@@ -38,8 +38,7 @@ public class Phone {
 
     @Override
     public String toString() {
-        return sName + " " + Name + " " + fName
-                + ", id: " + id + ", account num: " + accNum
+        return sName + " " + Name + " " + fName + ", id: " + id + ", account num: " + accNum
                 + "\ncity calls: " + cityCalls +"(min)" + ", intercity calls: " + intercityCalls + "(min)\n";
     }
 }
