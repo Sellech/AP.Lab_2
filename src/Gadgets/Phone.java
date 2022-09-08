@@ -14,6 +14,9 @@ public class Phone {
     private int cityCalls;
     private int intercityCalls;
 
+    /**
+     * Constructs a new Phone object with the information about a subscriber
+     */
     public Phone(int id, String sName, String Name, String fName, int accNum, int cityCalls, int intercityCalls ){
         this.id = id;
         this.sName = sName;

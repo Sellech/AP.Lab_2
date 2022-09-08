@@ -3,9 +3,18 @@ package Basis;
 import Gadgets.Phone;
 import java.util.Scanner;
 
+/**
+ * The Main class is used for executing the 2st laboratory work on AP
+ * @author Yaroslav Chepiuk, CS-207
+ * @version 1.0 2022-09-08
+ */
 public class Main {
-    public static void main(String[] args){
 
+    /**
+     * This is the main() method, which is the entry point for executing a Java program
+     * @param args contains the supplied command-line arguments
+     */
+    public static void main(String[] args){
         Phone[] arr = new Phone[7];
         arr[0] = new Phone(401, "Чепюк", "Ярослав","Андрійович", 345, 40, 70);
         arr[1] = new Phone(402, "Деряжний", "Гліб","Вікторович", 768, 96, 0);
@@ -20,6 +29,9 @@ public class Main {
         task_c(arr);
     }
 
+    /**
+     * The printLine method is used to print a decorative line to separate the text
+     */
     static void printLine(){
         for(int i=0;i<50;i++){
             System.out.print("-");
@@ -72,4 +84,3 @@ public class Main {
         }
     }
 }
-
