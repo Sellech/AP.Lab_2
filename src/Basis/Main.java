@@ -17,6 +17,7 @@ public class Main {
 
         task_a(arr);
         task_b(arr);
+        task_c(arr);
     }
 
     static void printLine(){
@@ -30,7 +31,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         printLine();
         printLine();
-        System.out.println("Task A\nEnter the limit of city calls:");
+        System.out.print("Task A\nEnter the limit of city calls: ");
         int lim = in.nextInt();
 
         printLine();
@@ -43,7 +44,6 @@ public class Main {
     }
 
     static void task_b(Phone[] arr){
-        Scanner in = new Scanner(System.in);
         printLine();
         System.out.println("Task B\nInformation about subscribers who used intercity call:");
         printLine();
@@ -55,6 +55,21 @@ public class Main {
         printLine();
     }
 
+    static void task_c(Phone[] arr){
+        Scanner in = new Scanner(System.in);
+        printLine();
+        System.out.println("Task C\nEnter a range of account values:");
+        System.out.print("min = ");
+        int min = in.nextInt();
+        System.out.print("max = ");
+        int max = in.nextInt();
+        printLine();
 
+        for(int i=0;i< arr.length;i++){
+            if((arr[i].getAccNum()>min)&&(arr[i].getAccNum()<max)){
+                System.out.println(arr[i]);
+            }
+        }
+    }
 }
 
